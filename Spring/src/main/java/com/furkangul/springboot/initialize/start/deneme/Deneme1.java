@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Deneme1 {
 
     @GetMapping("/square1/{number}")
-    public double square(@PathVariable(name="number") double sourceNumber){
+    public int square(@PathVariable(name="number") int sourceNumber){
+
         return sourceNumber*sourceNumber;
     }
 
